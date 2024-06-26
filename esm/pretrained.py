@@ -34,6 +34,7 @@ def ESM3_sm_open_v0(device: torch.device | str = "cpu"):
         .to(device)
         .eval()
     )
+    print(data_root())
     state_dict = torch.load(
         data_root() / "data/weights/esm3_sm_open_v1.pth", map_location=device
     )

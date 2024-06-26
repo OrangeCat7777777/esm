@@ -101,8 +101,7 @@ TFIDF_VECTOR_SIZE = 58641
 def data_root():
     # Try a few default directories
     for path in [
-        "esm/data",
-        "esm/data",
+        "/ai/share/workspace/weil/ckpts/esm3-sm-open-v1/data",
     ]:
         if (p := Path(path)).exists():
             return p.parent
